@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* fonts go first*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald&family=Poppins:ital,wght@0,600;0,700;1,600&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,500;1,700&display=swap');
+
+/* Apply the google fonts hre*/
+h1{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+h2{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	text-decoration: underline;
+}
+
+h3{
+	font-family: 'Montserrat', sans-serif;
+	color: darkblue;
+	font-weight: bold;
+	text-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+h4{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+	font-weight: bold;
+	font-style: italic;	
+}
+
+.pageTitle{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-weight: bold;	
+	text-decoration: underline;
+}
+
+#charName{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	background-color: white;
+	color: darkblue;
+	text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5), 2px -2px 0 rgba(255, 255, 255, 0.9);	
+}
+
+.footerText{
+	font-family: 'Roboto Condensed', sans-serif;	
+	text-decoration: none;
+	margin: 0;
+}
+
+.footerTextI{
+	font-family: 'Roboto Condensed', sans-serif;	
+	text-decoration: none;
+	font-style: italic;
+	font-size: 15px;
+	color: lightgray;
+	margin: 0;
+}
+
+
+p{
+	break-after: always;
+	display:block;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+html{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/************************** header area *******************************/
+/* for the header - background color, padding, center align text */
+header{
+	background-color: white;
+	text-align: center;
+	/* padding shortcut works the same as marin - top right bottom left */
+	padding: 30px 0px;
+}	
+
+
+/************************** section area *******************************/
+section{
+	/* all the default styles for all sections */
+	background-color: #080E1E;
+	max-width:950px;
+	color:white;
+	margin:0 auto; /* only for 0 no need for px or % */	
+	padding: 30px;
+	/*this will make the section the sie of ALL of the contents including those floatings*/
+	overflow:hidden;
+}
+
+/*override with CLASS - more than one element to look the same but not all the elements look that way*/
+.alternate{
+	background-color: #B9EFEC;
+	color: black;
+}
+
+.leftSide {
+	float: left;
+}
+
+.rightSide {
+	float: right;
+}
+
+section img{
+	float:right;
+	/*push text off the images*/
+	margin-right: 40px;
+}
+
+figcaption{
+	font-weight: bold;
+}
+/*************************** footer area ****************************************/
+footer{
+	background-color: #592026;
+	max-width:950px;
+	/* white text, center text, add padding*/
+	color:white;
+	text-align: center;
+	padding: 30px;
+	margin:0 auto; /* only for 0 no need for px or % */	
+}
+
+/************************ styled links *****************************************/
+/*default look of the link*/
+a:link{
+	color: yellow;	
+	font-weight: bold;
+}
+a:visited{
+	color: yellow;	
+	font-weight: bold;
+}
+a:hover{
+	color: cyan;
+	/*get rid of the underline*/
+	text-decoration: none;
+	transition-duration: 1s;
+	font-weight: bold;
+}
+a:active{
+	color: yellow;	
+}
+
+/******************************* button styling ******************************/
+button{
+	background-color: #E7E7E7;
+	padding: 16px 32px;
+	font-size: 16px;
+	/* change to a pointer finger */
+	cursor: pointer;
+	/* default border*/
+	border: 2px double #E7E7E7;
+	/* add a transition to fade between the states*/
+	transition-duration: 1s;
+}
+
+button:hover{
+	color: white;
+	background-color: #474041;
+}
+
+/******************************* NavBar ***********************************/
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #080E1E;
+}
+
+nav li {
+	/* put the list items side by each */
+	float: left;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition-duration: 1s;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+  background-color: #630809;
+}
+
+
+/* make a CLASS that adds the stickiness to the navbar */
+.sticky{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;	
+}
+
+.stickyTopNav{
+	position: -webkit-sticky; 
+	position: sticky;
+	top: 0;	
+	padding: 0 30px;
+}
+
+
+hr { 
+	display: block; 
+	margin: 20px 0;
+	overflow: hidden; 
+	border-style: inset; 
+	border-width: 1px;
+}
+
+div {
+  padding: 10px;
+  margin: 20px 0px 20px 0;
+}
