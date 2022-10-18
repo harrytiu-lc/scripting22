@@ -1,0 +1,133 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>Bootstrap 4</title>
+	
+	<!----------------------------Viewport Meta Tag------------------------------------>
+	<!-- checks the users device sie and set the zooming capabilities -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- put all font before css -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<!----------------------------Bootstrap CDNs------------------------------------>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!--------YOUR CSS - MUST go after the CDNs so you overwrite their styles---------------->
+	<link href="css/myStyles.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+	<!---------------------------------Masthead------------------------------------>
+	<header id="masthead">
+		<div class="container" >
+			<div class="row p-5" >
+				<div class="col-sm-12 text-center text-white">
+					<img src="images/avatars.svg" alt="avatars" title="avatars" width="25%">
+					<h1>Bootstrap</h1>
+					<p>Graphics Artist<span class="fas fa-car-side fa-1x fa-spin"></span>Web Designer Illustrator<span class="fas fa-bezier-curve fa-1x fa-spin" ></span>Illustrator</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!---------------------------------Portfolio------------------------------------>
+	<section id="portfolio">
+		<div class="container" >
+			<!-- first row -->
+			<div class="row p-3" >
+				<div class="col-sm-12 text-center">
+					<h2>Porfolio</h2>
+					<p>----------<span class="fas fa-award fa-1x"></span>-----------</p>
+				</div>
+			</div><!-- closes the first row -->
+			<!-- second row -->
+			<div class="row py-3 px-3" >
+				<div class="col-sm-4"><!-- left column -->
+					<img class="img-fluid rounded" src="images/cabin.png" alt="Cabin">
+				</div>
+				<div class="col-sm-4"><!-- center column -->
+					<img class="img-fluid rounded" src="images/cake.png" alt="Cake">
+				</div>
+				<div class="col-sm-4"><!-- center column -->
+					<img class="img-fluid rounded" src="images/circus.png" alt="Circus">
+				</div>
+			</div><!-- closes the second row -->
+			<!-- third row -->
+			<div class="row  py-3 px-3">
+				<div class="col-sm-4">
+					<img class="img-fluid rounded" src="images/game.png" alt="Game">
+				</div>
+				<div class="col-sm-4">
+					<img class="img-fluid rounded" src="images/safe.png" alt="Safe">
+				</div>
+				<div class="col-sm-4">
+					<img class="img-fluid rounded" src="images/submarine.png" alt="Submarine">
+				</div>
+			</div><!-- closes third row -->
+		</div>
+	</section>
+	<!---------------------------------About------------------------------------>
+	<section id="about">
+		<div class="container text-white" >
+			<div class="row  py-3 px-3">
+				<div class="col-sm-12 text-center">
+					<h2>About</h2>
+				</div>
+			</div><!-- ends first row-->
+			<div class="row py-3 px-5" >
+				<div class="col-sm-6"><!-- left column -->
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, doloribus, amet, quae magnam assumenda ad neque sit quis obcaecati esse cum temporibus numquam quod repellat! Assumenda expedita commodi veniam ipsum repellendus officiis voluptatibus praesentium quibusdam? Itaque in, ad error excepturi. Magni, nemo ex quo quaerat accusantium ut neque enim sint.</p>
+				</div>
+				<div class="col-sm-6"><!-- right column -->
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, doloribus, amet, quae magnam assumenda ad neque sit quis obcaecati esse cum temporibus numquam quod repellat! Assumenda expedita commodi veniam ipsum repellendus officiis voluptatibus praesentium quibusdam? Itaque in, ad error excepturi. Magni, nemo ex quo quaerat accusantium ut neque enim sint.</p>
+				</div>
+			</div><!-- closes the second row -->
+			<div class="row py-3 px-5">
+				<div class="col-sm-12 text-center text-danger">
+					<!-- <button type="button" class="btn btn-outline-warning">Free Download</button> -->
+					<button type="button" class="btn btn-outline-primary btn-lg">Free Download</button>
+				</div>
+			</div><!-- ends first row-->
+		</div><!-- closes about container  -->			
+	</section>
+	<!---------------------------------Footer------------------------------------>
+	<section id="footer">
+		<div class="container" ><!-- opens footer container  -->			
+			<div class="row py-3 px-3" ><!-- opens row -->
+				<div class="col-sm-4 py-5 px-5"><!-- left column -->
+					<h8>LOCATION</h8>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>consectetur adipisicing elit</p>
+				</div>
+				<div class="col-sm-4 py-5 px-5"><!-- center column -->
+					<h8>AROUND THE WORLD</h8>
+					<p><span class="fab fa-instagram fa-2x fa-spin" ></span><span class="fab fa-apple fa-2x fa-spin" ></span><span class="fab fa-twitter fa-2x fa-spin" ></span><span class="fab fa-facebook fa-2x fa-spin" ></span></p>
+				</div>
+				<div class="col-sm-4 py-5 px-5"><!-- right column -->
+					<h8>ABOUT FREELANCER</h8>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>consectetur adipisicing elit</p>
+				</div>
+			</div><!-- closes row -->
+		</div><!-- closes about container  -->			
+	</section>
+	<section id="copyright">
+		<div class="container" ><!-- opens footer container  -->			
+			<div class="row py-1 px-1" ><!-- opens row -->
+				<div class="col-sm-12 py-1 px-1"><!-- left column -->
+					<h10>Copyright text here!</h10>
+				</div>
+			</div><!-- closes row -->
+		</div><!-- closes about container  -->			
+	</section>
+</body>
+</html>

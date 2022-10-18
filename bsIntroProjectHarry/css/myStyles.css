@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#masthead{
+	/*	background-color: #00011F;*/
+	background-image: url("../images/bgImages/mountains.jpg");
+	background-size: cover;
+	background-position: center;	
+}
+
+#portfolio{
+	background-color: beige;
+}
+
+#about{
+	/*	background-color: #06B88F;*/
+	background-image: url("../images/bgImages/Abstract-blue_0.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#footer{
+	background-color: #1B1919;
+	text-align: center;
+	color: cyan; 
+}
+#copyright{
+	background-color: black;
+	text-align: center;
+	color: #FFFFFF; 
+}
+
+h10{
+	color: white;
+	text-align: center;
+	font-size: 10px;
+}
+
+span{
+	padding: 3px;
+}
+
