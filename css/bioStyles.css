@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* fonts go first*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Shalimar&display=swap');
+
+#masthead{
+	/*	background-color: #00011F;*/
+	background-image: url("../images/bgImages/boracayHorizon.jpg");
+	background-size: cover;
+	background-position: bottom;	
+	color: yellow;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+	height: 200px;
+}
+
+#portfolio{
+	font-family: 'Montserrat', sans-serif;
+	background-color: azure;
+}
+
+#about{
+	/*	background-color: #06B88F;*/
+	background-image: url("../images/bgImages/Abstract-blue_0.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#footer{
+	background-color: #1B1919;
+	text-align: center;
+	color: cyan; 
+}
+#copyright{
+	background-color: black;
+	text-align: center;
+	color: #FFFFFF; 
+}
+
+.panel-title{
+	text-align: center;		
+}
+
+h2{
+	font-family: 'Montserrat', sans-serif;
+	color: darkslateblue;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 25px;
+}
+
+h3{
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	text-align: left;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+h4{
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+h5{
+	font-family: 'Shalimar', sans-serif;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+h6{
+	font-family: 'Kalam', sans-serif;
+	color: black;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+h8{
+	font-family: 'Montserrat', sans-serif;
+	color: cyan;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 12px;
+}
+
+h10{
+	color: yellow;
+	text-align: center;
+	font-size: 10px;
+}
+
+span{
+	padding: 3px;
+}
+
+.container{
+	align-self: center;
+	padding: 5px 10px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: lightblue;
+	padding: 10px;
+}
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 5px hidden rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 10px;
+	text-align: center;
+}
+
+div.panel{
+	background-color: lightblue;
+	padding: 10px 30px;	
+	border-style: none none double none;
+	margin-bottom: 3px;
+}
+
+p.card-body{
+	font-family: 'Montserrat', sans-serif;
+	color: midnightblue;
+	text-align: left;
+	font-weight: bolder;
+	font-size: 15px;
+	
+}
+
+/*default look of the link*/
+a:link{
+	color: darkblue;	
+	font-weight: bold;
+}
+a:visited{
+	color: yellow;	
+	font-weight: bold;
+}
+a:hover{
+	color: yellow;
+	/*get rid of the underline*/
+	text-decoration: none;
+	transition-duration: 0.5s;
+	font-weight: bold;
+}
+a:active{
+	color: yellow;	
+}
+
+/* Image Gallery Starts*/
+* {
+  box-sizing: border-box;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Expanding image text */
+#imgtext {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.tab-img-zoom {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute; 
+	bottom: 0; 
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	width: 100%;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 15px;
+	padding: 10px;
+	text-align: left;
+}
+
+/* The expanding image container */
+.tab-container1 {
+	position: relative;
+	display: none;
+}
+
+.tab-container1:hover .overlay {
+	opacity: 1;
+}
+
+.tab-container2 {
+	position: relative;
+	display: none;
+}
+
+.tab-container2:hover .overlay {
+	opacity: 1;
+}
+
+.tab-container3 {
+	position: relative;
+	display: none;
+}
+
+.tab-container3:hover .overlay {
+	opacity: 1;
+}
+
+.tab-container4 {
+	position: relative;
+	display: none;
+}
+
+.tab-container4:hover .overlay {
+	opacity: 1;
+}
+
+.tab-container5 {
+	position: relative;
+	display: none;
+}
+
+.tab-container5:hover .overlay {
+	opacity: 1;
+}
+
+/*Image Gallery Ends*/
+
+.sticky{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;	
+}
+
+.stickyTopNav{
+	position: -webkit-sticky; 
+	position: sticky;
+	top: 0;	
+	padding: 0 30px;
+}
+
+/******************************* NavBar ***********************************/
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: lightgoldenrodyellow;
+	border-top-left-radius: 5px 5px; /* rounded corner! */
+	border-top-right-radius: 5px 5px; /* another rounded corner! */	
+	border-bottom-left-radius: 5px 5px; /* rounded corner! */
+	border-bottom-right-radius: 5px 5px; /* another rounded corner! */	
+}
+
+nav li {
+	/* put the list items side by each */
+	float: inherit;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: left;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition-duration: 1s;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+  background-color: #630809;
+}
