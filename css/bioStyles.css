@@ -138,11 +138,11 @@ p.card-body{
 
 /*default look of the link*/
 a:link{
-	color: darkblue;	
+	color: darkgreen;	
 	font-weight: bold;
 }
 a:visited{
-	color: yellow;	
+	color: darkblue;	
 	font-weight: bold;
 }
 a:hover{
