@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/*if you want a different look in each header on the different pages, then use an ID rather than just header*/
+#homeMasthead{
+	/*	background-color:#102E45;*/
+	background-image: url("../images/backgrounds/Convocation-mobile.jpg");
+	/* make sure the whole element is covered and not tiling */
+	background-size: cover;
+	/* prioritize a certain part of the picture to be shown */
+	background-position: center;
+}
+
+#serviceMasthead{
+	/*	background-color:#102E45;*/
+	background-image: url("../images/backgrounds/serviceDog.jpg");
+	/* make sure the whole element is covered and not tiling */
+	background-size: cover;
+	/* prioritize a certain part of the picture to be shown */
+	background-position: right;	
+}
+
+/*set the default font size - Mobile First*/
+/* overriding a bootstrap4 class with your own style*/
+.display-1{
+	font-size: 30pt;
+}
+
+h2{
+	color: brown;	
+}
+
+.bg-dark{
+	background-color: lightgoldenrodyellow; 
+}
+
+/*class to define the height of any element it is added to*/
+.height80{
+	height:80vh;
+}
+
+footer{
+	background-color: #01253D;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	color:#BDC6D0;
+}
+
+a:link, a:visited{
+	color: #BDC6D0;
+}
+a:hover{
+	color: #8DA6C3;
+}
+
+/* Smal Devices */
+@media only screen and (min-width: 576px) {
+	.display-1{
+		font-size: 30pt;
+		color: white;
+	}
+}/*close small media query*/
+
+
+/* Medium Devices*/
+@media only screen and (min-width: 768px) {
+	#homeMasthead{
+		background-image: url("../images/backgrounds/homeDog.jpg");
+	}
+	.display-1{
+		font-size: 80pt;
+		color: red;
+	}
+} /*close medium media query*/
+
