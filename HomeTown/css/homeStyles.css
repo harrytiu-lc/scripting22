@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* fonts go first*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@200&family=Oswald&family=Poppins:ital,wght@0,600;0,700;1,600&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,500;1,700&family=Work+Sans:wght@100;400&display=swap');
+
+/*if you want a different look in each header on the different pages, then use an ID rather than just header*/
+#homeMasthead{
+	/*	background-color:#102E45;*/
+	background-image: url("../images/bg/pexels-singapore-merlion.jpg");
+	/* make sure the whole element is covered and not tiling */
+	background-size: cover;
+	/* prioritize a certain part of the picture to be shown */
+	background-position: center;
+}
+
+#discoverMasthead{
+	/*	background-color:#102E45;*/
+	background-image: url("../images/pexelsSgDiscover5.jpg");
+	/* make sure the whole element is covered and not tiling */
+	background-size: cover;
+	/* prioritize a certain part of the picture to be shown */
+	background-position: center;
+}
+
+#travelMasthead{
+	/*	background-color:#102E45;*/
+	background-image: url("../images/pexelsSgTravel3.jpg");
+	/* make sure the whole element is covered and not tiling */
+	background-size: cover;
+	/* prioritize a certain part of the picture to be shown */
+	background-position: center;
+}
+
+#planMasthead{
+	/*	background-color:#102E45;*/
+	background-image: url("../images/pexelsSgTravel2.jpg");
+	/* make sure the whole element is covered and not tiling */
+	background-size: cover;
+	/* prioritize a certain part of the picture to be shown */
+	background-position: center;
+}
+
+#serviceMasthead{
+	/*	background-color:#102E45;*/
+	background-image: url("../images/backgrounds/serviceDog.jpg");
+	/* make sure the whole element is covered and not tiling */
+	background-size: cover;
+	/* prioritize a certain part of the picture to be shown */
+	background-position: right;	
+}
+
+/*set the default font size - Mobile First*/
+/* overriding a bootstrap4 class with your own style*/
+.display-1{
+		font-size: 50pt;
+		color: red;
+		font-weight: bolder;
+		font-family: 'Great Vibes', cursive;
+}
+
+h2{
+	font-family: 'Montserrat', sans-serif;
+	color: darkslateblue;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+h3{
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	text-align: left;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+h4{
+	font-family: 'Montserrat', sans-serif;
+	color: yellow;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+h5{
+	font-family: 'Shalimar', sans-serif;
+	color: darkslateblue;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+h6{
+	font-family: 'Kalam', sans-serif;
+	color: black;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+h7{
+	font-family: 'Kalam', sans-serif;
+	color: white;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+h8{
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	text-align: left;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+h10{
+	color: yellow;
+	text-align: center;
+	font-size: 10px;
+}
+
+.bg-dark{
+	background-color: lightgoldenrodyellow; 
+}
+
+.modalPic{
+	text-align: center;
+	background-color: burlywood;
+}
+
+/*class to define the height of any element it is added to*/
+.height80{
+	height:80vh;
+}
+
+.height40{
+	height:40vh;
+}
+
+.height60{
+	height:60vh;
+}
+
+footer{
+	background-color: #01253D;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	color:#BDC6D0;
+}
+
+a:link, a:visited{
+	color: darkblue;
+}
+
+h10 a:link{
+	color: yellow;
+}
+
+h10 a:visited{
+	color: yellow;
+}
+
+
+a:hover{
+	color: green;
+}
+
+#portfolio{
+	background-color: #F8F8EF;
+}
+
+#footer{
+	/*	background-color: #06B88F;*/
+	background-image: url("../images/bg/Abstract-blue_0.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#copyright{
+	background-color: black;
+	text-align: center;
+	color: #FFFFFF; 
+}
+
+#topMenu{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#topMenu li {
+	float: left;
+}
+
+#topMenu li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 1px 10px 1px 50px;
+	text-decoration: none;
+}
+
+/* Smal Devices */
+@media only screen and (min-width: 576px) {
+	.display-1{
+		font-size: 30pt;
+		color: white;
+	}
+}/*close small media query*/
+
+/* Medium Devices*/
+@media only screen and (min-width: 768px) {
+	#homeMasthead{
+		background-image: url("../images/bg/pexels-singapore-merlion.jpg");
+	}
+	#masthead{
+		background-image: url("../images/bg/pexelsSgHorizon01.jpg");
+		background-position: center;
+		background-size: cover;
+	}
+	.container{
+		max-width: 95%;
+	}
+	.display-1{
+		margin-top: 15px;
+		color: #FC0408;
+		font-family: 'Great Vibes', cursive;
+		font-size: 40pt;
+		font-weight: bold;
+	}
+	#collapsibleNavbar{
+		width: 100%;
+		align: right;
+	}
+} /*close medium media query*/
+

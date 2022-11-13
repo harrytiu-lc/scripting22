@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Discovering Singapore</title>
+	<!----------------------------Meta Viewport Tag------------------------------------>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!----------------------------Font Awesome---------------------------->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	
+<!----------------------------Boostrap Libraries------------------------------------>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	
+	<!-- -->
+	<link href="css/homeStyles.css" rel="stylesheet" type="text/css">
+
+	<!-- jQuery library -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+	<!----------------------Collapsing Sticky Navbar------------------------------------>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+	  <!-- Brand -->
+	  <a class="navbar-brand" href="index.html">Singapore</a>
+
+	  <!-- Toggler/collapsibe Button -->
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <!-- Navbar links -->
+	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul id="topMenu" class="navbar-nav" >
+		  <li class="nav-item">
+			<a class="nav-link" href="discover.html"><span class="fas fa-binoculars fa-1x" >&nbsp;</span>Discover</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="travel.html"><span class="fas fa-plane-arrival fa-1x" >&nbsp;</span>Travel</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="plan.html"><span class="far fa-map fa-1x" >&nbsp;</span>Plan</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>				
+	<!----------------------------Masthead Area------------------------------------>
+	<header id="discoverMasthead">
+		<div class="container">
+			<div class="row text-white height60 align-items-top">
+				<div class="col-sm-12">
+					<!--------------We will add responsive media query for text------------------>
+					<h1 class="display-1">Discovering Singapore</h1>
+					<!---------------Add styles for horizontal rule-------------->
+					<!---------------Add a button--------------------->
+					
+				</div><!--ends column-->
+			</div><!--ends row-->
+		</div><!--ends container-->
+	</header>
+	
+	<!---------------------------------discover------------------------------------>
+	<section id="discover">
+		<div class="container" >
+			<!-- first row -->
+			<div class="row p-3" >
+				<div class="col-sm-12 text-center"></div>
+			</div><!-- closes the first row -->
+			<!-- second row -->
+			<div class="row py-3 px-3" >
+				<div class="col-sm-6">
+					<h5>Brief History</h5>
+					<p>Singapore locally known as Singapura and officially known as Republic of Singapore is a sovereign city-state located in Southeast Asia. The name ‘Singapore’ derives from the Sanskrit Singa Pura (‘City of the Lion’). It was established in the 13th century as a port settlement and served as a trading route between countries from the Indian Ocean and South China Sea. It became a British colony from the early 19th century to mid 20th century and was converted to a major trade hub that attracted immigrants from China, India and the Malay Archipelago. It gained its independence from Great Britain in 1946 and became part of Federation of Malaya which is now Malaysia. It separated from Malaysia and became a sovereign city-state on August 9, 1965, commemorated as Singapore National Day.</p>
+					<p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#historyModal">History Picture Gallery</button></p>
+					<!-- Modal -->
+					<div id="historyModal" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+								<h5 class="modal-title">History Picture Gallery</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div id="carouselHistory" class="carousel slide" data-ride="carousel">
+										<!-- Indicators -->
+										<ul class="carousel-indicators">
+											<li data-target="#carouselHistory" data-slide-to="0" class="active"></li>
+											<li data-target="#carouselHistory" data-slide-to="1"></li>
+											<li data-target="#carouselHistory" data-slide-to="2"></li>
+										</ul>
+
+										<!-- The slideshow -->
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<h8>An Old Picture of Singapore.</h8>
+												<div class="modalPic"><img src="images/sgOld.jpg" alt="Old Singapore" class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://www.holidify.com/images/cmsuploads/compressed/Photographic_Views_of_Singapore_Plate_12_Malay_Village_Pulau_Brani_20191125151936.jpg" target="_blank">holidify.com</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>A Picture of Old Singapore Port.</h8>
+												<div class="modalPic"><img src="images/sgOldPort.png" alt="Old Singapore Port" class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://spj.hkspublications.org/wp-content/uploads/sites/21/2016/04/labspj-2-800x445.png" target="_blank">hkspublications.org</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>Stamford Raffles oversaw the potential of Singapore as the perfect location for a new port in the pacific.</h8>
+												<div class="modalPic"><img src="images/sgStamfordRaffles1.jpg" alt="Stamford Raffles" class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://www.holidify.com/images/cmsuploads/compressed/5234578584_2400dabc9e_b_20180707105937.jpg" target="_blank">holidify.com</a></strong></h10></div>
+											</div>
+										</div>
+
+										<!-- Left and right controls -->
+										<a class="carousel-control-prev" href="#carouselHistory" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+										</a>
+										<a class="carousel-control-next" href="#carouselHistory" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+										</a>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col-sm-6">
+					<h5>People &amp; Language</h5>
+					<p>Singapore has a population of almost 6 million and comprises of 3 major ethnicities: Chinese, Malay and Indian. Today, Singapore is a melting pot of different cultures. People from various parts of the globe have come to Singapore to do business or leisure, visit, work and some permanently live. English, Chinese Mandarin, Malay and Tamil are the official languages of the country. English is the most used language in the city. Though Malay is considered as the National Language, it is only the third most used. English language is the most widely used because it is the working language of businesses since it is considered as the global business language. In the streets of Singapore many speak Singlish short for Singapore English, a patois language called Singapore Colloquial English by academics. It is an English language spoken in a thick Chinese accent with some mix of Chinese words in it but still communicable to most variations of the English language. Mandarin is the second most used language since Chinese is the largest ethnic group making up almost ¾ of the country’s population. Malays are the original settlers of Singapore and are the second largest ethnic group. They speak the Malay language called Bahasa Melayu. The Indians are Singapore’s third largest ethnic group and mostly are Tamil speaking because most of them are from the Southern part of India after the British settled in Singapore in 1819.</p>
+					<p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#peopleModal">People &amp; Language Picture Gallery</button></p>
+					<!-- Modal -->
+					<div id="peopleModal" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+								<h5 class="modal-title">People &amp; Language Picture Gallery</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div id="carouselPeople" class="carousel slide" data-ride="carousel">
+										<!-- Indicators -->
+										<ul class="carousel-indicators">
+											<li data-target="#carouselPeople" data-slide-to="0" class="active"></li>
+											<li data-target="#carouselPeople" data-slide-to="1"></li>
+											<li data-target="#carouselPeople" data-slide-to="2"></li>
+											<li data-target="#carouselPeople" data-slide-to="3"></li>
+										</ul>
+
+										<!-- The slideshow -->
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<h8>Multiculturalism with four categorisation of race — Chinese, Malay, Indian and Others.</h8>
+												<div class="modalPic"><img src="images/sgPeople1a.jpeg" alt="Singapore Youth"  class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://miro.medium.com/max/1400/1*7FLaUO0HgaAYc4k8uQ22Bw.jpeg" target="_blank">medium.com</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>Singapore celebrates Racial Harmony Day.</h8>
+												<div class="modalPic"><img src="images/sgPeopleRaceHarmony.jpg" alt="Singapore Racial Harmony Day" class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://tickikids.ams3.cdn.digitaloceanspaces.com/z2.cache/gallery/activities/12747/image_5b4c8bc22b0722.24231524.jpg" target="_blank">tickikids.com</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>Multiracial country - You can have friends from many different races and religions.</h8>
+												<div class="modalPic"><img src="images/sgPeopleRaces1.jpg" alt="Multicultural Society" class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://adnchronicles.org/wp-content/uploads/2021/12/photo1_1626451243-scaled.jpg" target="_blank">adnchronicles.org</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>English, Chinese Mandarin, Malay and Tamil are the official languages of the country.</h8>
+												<div class="modalPic"><img src="images/sgLanguage.jpg" alt="Multilanguage country" class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="http://healthylinguisticdiet.com/wp-content/uploads/2019/03/harmony_in_diversity_1600x900px.jpg" target="_blank">healthylinguisticdiet.com</a></strong></h10></div>
+											</div>
+										</div>
+
+										<!-- Left and right controls -->
+										<a class="carousel-control-prev" href="#carouselPeople" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+										</a>
+										<a class="carousel-control-next" href="#carouselPeople" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+										</a>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<!-- closes the second row -->
+			<!-- 3rd row -->
+			<div class="row py-3 px-3" >
+				<div class="col-sm-6">
+					<h5>Geography &amp; Weather</h5>
+					<p>Located in the Southeast Asian region specifically at the end of the Malayan Peninsula bordering Malaysia in the north, Indonesia in the west and south, and the South China sea in the east. Singapore is generally a flat land that has a land are of 728.6 km2, its highest peak is Bukit Timah at only 166 meters high. It is a tropical country located near the equator with abundant rainfall and high humidity throughout the year. The average daily maximum temperature is 31.4°C (88.5°F) and the average daily minimum temperature is 24.5°C (76.1°F) (source http://www.weather.gov.sg).</p>
+					<p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#geoWeatherModal">Geography &amp; Weather</button></p>
+					<!-- Modal -->
+					<div id="geoWeatherModal" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+								<h5 class="modal-title">Geography &amp; Weather Picture Gallery</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div id="carouselGeoWeather" class="carousel slide" data-ride="carousel">
+										<!-- Indicators -->
+										<ul class="carousel-indicators">
+											<li data-target="#carouselGeoWeather" data-slide-to="0" class="active"></li>
+											<li data-target="#carouselGeoWeather" data-slide-to="1"></li>
+											<li data-target="#carouselGeoWeather" data-slide-to="2"></li>
+										</ul>
+
+										<!-- The slideshow -->
+										<div class="carousel-inner">
+											
+											<div class="carousel-item active">
+												<h8>Singapore is situated in South-East Asia and lying just north of the equator.</h8>
+												<div class="modalPic"><img src="images/sgMap2.jpg" alt="Singapore Map" class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://www.gtreview.com/wp-content/uploads/2020/11/Singapore-Pin-Marker-Map_News.jpg" target="_blank">gtreview.com</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>Rainy weather in Singapore.</h8>
+												<div class="modalPic"><img src="images/sgWeatherRain.jpg" alt="Rainy Singapore" class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://onecms-res.cloudinary.com/image/upload/s--PYMdsria--/f_auto%2Cq_auto/c_fill%2Cg_auto%2Ch_622%2Cw_830/v1/tdy-migration/20211116_singapore_rain_suhaimi_yusof_reuters_connect.jpg?itok=32gfiVvM" target="_blank">todayonline.com</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>Hot sunny weather in Singapore.</h8>
+												<div class="modalPic"><img src="images/sgWeatherHot.jpg" alt="Singapore Hot Weather" class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://media.asiaone.com/sites/default/files/styles/article_main_image/public/original_images/May2022/300522_warmweather_thestraitstimesHL.jpg?itok=ZmHNXN-9" target="_blank">asiaone.com</a></strong></h10></div>
+											</div>
+										</div>
+
+										<!-- Left and right controls -->
+										<a class="carousel-control-prev" href="#carouselGeoWeather" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+										</a>
+										<a class="carousel-control-next" href="#carouselGeoWeather" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+										</a>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col-sm-6">
+					<h5>Top Universities</h5>
+					<p><b>The National University of Singapore or NUS</b> founded 1905 considered as Singapore’s flagship university is ranked 11th in the World and ranked 1st in Asia. This school is now ranked 7th in the world for engineering and technology subject area and ranked 6th for Civil Engineering. According to https://www.topuniversities.com/ for the year 2021.</p>
+					<p><b>Nanyang Technological University or NTU</b> is one of the top universities in Singapore. It has recently broken into the top 40 universities in the world, the university rose 10 spots to rank 36th place globally as posted in its website https://www.ntu.edu.sg/. The university offers undergraduate and postgraduate program for students in engineering, business, science, humanities, arts, social sciences, education and medicine. It has a Smart Campus that serves as a testbed for tomorrow’s technologies.</p>
+					<p><b>Singapore Management University or SMU</b> established year 2000 is a premier university in Asia. It offers programs for undergraduate, postgraduate research programs for College of Integrative Studies, School of Accountancy, Business, Economics, Computing and Information Systems, Law and Social Sciences. It claims to be internationally recognized for its world-class research and distinguish teaching according to their website https://www.smu.edu.sg/about.</p>
+					<p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#topUnivModal">Top Universities Picture Gallery</button></p>
+					<!-- Modal -->
+					<div id="topUnivModal" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+								<h5 class="modal-title">Top Universities Picture Gallery</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div id="carouselTopUniv" class="carousel slide" data-ride="carousel">
+										<!-- Indicators -->
+										<ul class="carousel-indicators">
+											<li data-target="#carouselTopUniv" data-slide-to="0" class="active"></li>
+											<li data-target="#carouselTopUniv" data-slide-to="1"></li>
+											<li data-target="#carouselTopUniv" data-slide-to="2"></li>
+											<li data-target="#carouselTopUniv" data-slide-to="3"></li>
+										</ul>
+
+										<!-- The slideshow -->
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<h8>National University of Singapore Campus.</h8>
+												<div class="modalPic"><img src="images/sgNUS.jpg" alt="National University of Singapore Campus"  class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://amgenscholars.com/wp-content/uploads/2018/09/photo-nus.jpg" target="_blank">amgenscholars.com</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>Nanyang Technological University Campus.</h8>
+												<div class="modalPic"><img src="images/sgNTUCampus.jpg" alt="Nanyang Technological University Campus"  class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://www.ntu.edu.sg/images/default-source/accommodations/the-hiveed0fffeb-e6c0-46dd-9132-7321783f67a9.jpg?Status=Master&sfvrsn=dc5e48c9_3" target="_blank">ntu.edu.sg</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>Nanyang Technological University Indoor Campus.</h8>
+												<div class="modalPic"><img src="images/sgNTUCampus2.jpg" alt="Nanyang Technological University Indoor Campus"  class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="http://www.chonghwakl.edu.my/edufair/wp-content/uploads/2021/12/sgntu11-thehive02.jpg" target="_blank">chonghwakl.edu.my</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>Singapore Management University Campus.</h8>
+												<div class="modalPic"><img src="images/sgSMUCampus2.jpg" alt="Singapore Management University Campus"  class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://studentportal.gu.se/digitalAssets/1797/1797245_smu-photo-official.jpg" target="_blank">studentportal.gu.se</a></strong></h10></div>
+											</div>
+										</div>
+
+										<!-- Left and right controls -->
+										<a class="carousel-control-prev" href="#carouselTopUniv" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+										</a>
+										<a class="carousel-control-next" href="#carouselTopUniv" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+										</a>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>				
+			</div><!-- closes the 3rd row -->			
+			<!-- 4th row -->
+			<div class="row py-3 px-3" >
+				
+				<div class="col-sm-6">
+					<h5>Economy</h5>
+					<p>Singapore is an economic powerhouse, it remains one of the strongest anchored with political stability, low corruption index and transparent institutions. It is the 5th most competitive country in the world for doing business, 4th largest recipient of Foreign Direct Investments FDI and 1st in the world for political and operational stability. This is according to the Singapore government website https://www.edb.gov.sg/ under Why Singapore link. After its independence, Singapore started as a low-income economy but after several decades it is now a high-income economy with a gross national income of US$54,530 per capita as of 2017. Manufacturing sector particularly electronics and precision engineering, and services sector particularly information and communications industries and finance and insurance industries, remain the strongest pillars of the country. This is according to the World Bank Organization, published in their website date last updated April 9, 2019. Despite the country has no natural resources, Singapore continues to be one of the strongest and most stable economy in the world.</p>
+					<p>Competitive Economy, Transparent Government, Easy Infrastructure, Strategic Location, Competent Labour Force, Efficient Tax System, Abundant Finance at Low Interest Rates and Easy Company Incorporation Process. These are factors make Singapore the world’s top country when it comes to doing business. (source: intuitconsultancy.com on the topic "Why Should You Consider Doing Business In Singapore?" published November 1, 2018)</p>
+					<p><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#economyModal">Economy Picture Gallery</button></p>
+					<!-- Modal -->
+					<div id="economyModal" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+								<h5 class="modal-title">Economy Picture Gallery</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<div id="carouselEconomy" class="carousel slide" data-ride="carousel">
+										<!-- Indicators -->
+										<ul class="carousel-indicators">
+											<li data-target="#carouselEconomy" data-slide-to="0" class="active"></li>
+											<li data-target="#carouselEconomy" data-slide-to="1"></li>
+											<li data-target="#carouselEconomy" data-slide-to="2"></li>
+											<li data-target="#carouselEconomy" data-slide-to="3"></li>
+										</ul>
+
+										<!-- The slideshow -->
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<h8>Singapore enjoys an attractive position in the global economy and continues to be every entrepreneur’s heartland in Asia. (source: intuitconsultancy.com on the topic "Why Should You Consider Doing Business In Singapore?" published November 1, 2018)</h8>
+												<div class="modalPic"><img src="images/sgDoingBusiness1.png" alt="Doing Business in Singapore"  class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://intuitconsultancy.com/why-should-you-consider-doing-business-in-singapore/" target="_blank">intuitconsultancy.com</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>Singapore: A leading manufacturing hub. Its commitment to innovation makes Singapore globally competitive. (source: edb.gov.sg published May 21, 2018)</h8>
+												<div class="modalPic"><img src="images/sgManufacturingHub.jpg" alt="Singapore: A leading manufacturing hub"  class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://www.edb.gov.sg/en/business-insights/insights/singapore-a-leading-manufacturing-hub.html" target="_blank">edb.gov.sg</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>Singapore is home to many global technology firms including Google, Facebook, Alibaba, and regional leaders like Garena, Grab, Lazada and Razer. (source: edb.gov.sg)</h8>
+												<div class="modalPic"><img src="images/sgICT1.jpg" alt="Singapore Vibrant ICT ecosystem"  class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://www.edb.gov.sg/en/our-industries/information-and-communications-technology.html" target="_blank">edb.gov.sg</a></strong></h10></div>
+											</div>
+											<div class="carousel-item">
+												<h8>Singapore has risen to become the economic hub of Asia, and is mentioned alongside other financial centers such as New York, Hong Kong and Tokyo. (source: aseanbriefing.com on the topic "Singapore: Digitization of a Financial Powerhouse" published April 8, 2019 authors Viktoria Paul and Marco Förster)<strong></strong></h8>
+												<div class="modalPic"><img src="images/sgFinance1.jpg" alt="Singapore: Digitization of a Financial Powerhouse"  class="img-fluid rounded"></div>
+												<div class="carousel-caption"><h10><strong>Photo from <a href="https://www.aseanbriefing.com/news/wp-content/uploads/2019/04/ASEAN-Briefing-Singapores-Fintech-Sector-002.jpg" target="_blank">aseanbriefing.com</a></strong></h10></div>
+											</div>										
+										</div>
+
+										<!-- Left and right controls -->
+										<a class="carousel-control-prev" href="#carouselEconomy" data-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+										</a>
+										<a class="carousel-control-next" href="#carouselEconomy" data-slide="next">
+											<span class="carousel-control-next-icon"></span>
+										</a>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col-sm-6">&nbsp;</div>								
+			</div><!-- closes the 4th row -->					
+		</div>
+	</section>
+
+	<!---------------------------------Footer------------------------------------>
+	<section id="footer">
+		<div class="container" ><!-- opens footer container  -->			
+			<div class="row py-3 px-3" ><!-- opens row -->
+				<div class="col-sm-4 py-5 px-5"><!-- left column -->
+					<h8>LOCATION</h8>
+					<p>Lethbridge College</p>
+					<p>Lethbridge City, Alberta, Canada</p>
+				</div>
+				<div class="col-sm-4 py-5 px-5"><!-- center column -->
+					<h8>SOCIAL MEDIA</h8>
+					<p>
+						<span class="fab fa-instagram fa-1x" >&nbsp;</span>
+						<span class="fab fa-apple fa-1x" >&nbsp;</span>
+						<span class="fab fa-twitter fa-1x" >&nbsp;</span>
+						<span class="fab fa-facebook fa-1x" >&nbsp;</span>
+					</p>
+				</div>
+				<div class="col-sm-4 py-5 px-5"><!-- right column -->
+					<h8>ABOUT FREELANCER</h8>
+					<p>Harry Capistrano Tiu</p>
+					<p>Student, Multimedia Program</p>
+					<p>Singapore has been my hometown for more than 10 years and still a resident living away from home.</p>					
+				</div>
+			</div><!-- closes row -->
+		</div><!-- closes about container  -->			
+	</section>
+	<section id="copyright">
+		<div class="container" ><!-- opens footer container  -->			
+			<div class="row py-1 px-1" ><!-- opens row -->
+				<div class="col-sm-12 py-1 px-1"><!-- left column -->
+					<h10>This page is created purely for Multimedia Scripting exercises only, no copyright infringement intended. Hometown Page v0.1</h10>
+				</div>
+			</div><!-- closes row -->
+		</div><!-- closes about container  -->			
+	</section>	
+</body>
+</html>
