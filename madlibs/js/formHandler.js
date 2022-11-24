@@ -73,7 +73,7 @@ function write(){
 		document.getElementById('output').innerHTML += boyName1 + " remembered we left all our staff in the woods including his " + brandName2 +" wallet with his license in it. ";
 		document.getElementById('output').innerHTML += "Officer " + hero + " orders all of us to step out of the car but before we opened the door somebody tapped him from behind, it was " + pet + ".  ";
 		document.getElementById('output').innerHTML += expression3 + "! shouted officer " + hero + ". We sped off again leaving the two behind. ";
-		document.getElementById('output').innerHTML += "From then on, we never went back to mount " + favePlace + " park again. ";
+		document.getElementById('output').innerHTML += "From then on, we never went back to Mount " + favePlace + " Park again. ";
 		document.getElementById('output').innerHTML += "</p>";
   		
 	}
