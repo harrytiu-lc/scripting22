@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Madlibs</title>
+	<!----------------------------Meta Viewport Tag------------------------------------>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!----------------------------Font Awesome---------------------------->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/formJsStyle.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
+    
+</head>
+<body>
+
+    <!---------------------Masthead----------------------->
+    <header id="homeMasthead">
+        <div class="container">
+            <div class="row align-items-center customHeight">
+                <div class="col-sm-6 text-white bg-dark mx-auto p-5 rounded">
+                    <h1>myMadlibs</h1>
+                    <h2>Let's Play A Word Game!</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+    <!---------------------Main Body Content----------------------->
+    <section>
+        <div class="container py-5">
+
+             <!------------Row for the Form----------------------->
+            <div class="row my-5 p-3">
+                <div class="col-sm-8 mx-auto">
+                    <h3>Hello <i class="far fa-grin-beam" style="font-size:24px"></i> Welcome to Forest Adventure Madlibs</h3>
+                    <p>Please complete the form below :</p>
+
+                    <!--Form Goes Here-->
+                    <!--The HTML <form> element is used to create an HTML form for user input-->
+                    <!--One of the most used form element is the <input> element. This creates an input into which the user can enter information-->
+                    <!--The 'type' attribute will change the way the input looks-->
+                    <!--The <label> element defines a label for several form elements. -->
+                    <!--Then we will use a button to trigger our Javascript code!-->
+					<form action="javascript:write();">
+						<div class="form-group">
+							Select Your Favourite Season?
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="radio" class="form-check-input" name="season" value="winter" checked>Winter
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="radio" class="form-check-input" name="season" value="spring">Spring
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="radio" class="form-check-input" name="season" value="summer">Summer
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="radio" class="form-check-input" name="season" value="fall">Fall
+								</label>
+							</div>
+						</div>
+						<div class="form-group">
+						   <label for="year">Your most memorable year?</label>
+						   <input class="form-control" type="number" id="year" maxlength="4"> 
+						</div>						
+						<div class="form-group">
+						   <label for="boyName1">Enter a Boy's Name:</label>
+						   <input class="form-control" type="text" id="boyName1" maxlength="40"> 
+						</div>						
+						<div class="form-group">
+						   <label for="girlName1">Enter a Girl's Name:</label>
+						   <input class="form-control" type="text" id="girlName1" maxlength="40"> 
+						</div>						
+						<div class="form-group">
+						   <label for="girlName2">Enter another Girl's Name:</label>
+						   <input class="form-control" type="text" id="girlName2" maxlength="40"> 
+						</div>						
+						<div class="form-group">
+						   <label for="timeOfTheDay">Select Time of the Day:</label>
+								<select name="timeOfTheDay" id="timeOfTheDay">
+									<option value="Morning">Morning</option>
+									<option value="Afternoon">Afternoon</option>
+									<option value="Evening">Evening</option>
+								</select>	
+						</div>						
+						<div class="form-group">
+						   <label for="brandName1">Enter a Brand Name:</label>
+						   <input class="form-control" type="text" id="brandName1" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="brandName2">Enter another Brand Name:</label>
+						   <input class="form-control" type="text" id="brandName2" maxlength="100"> 
+						</div>	
+						<div class="form-group">
+						   <label for="number1">Give a number:</label>
+						   <input class="form-control" type="number" id="number1" maxlength="3"> 
+						</div>						
+						<div class="form-group">
+						   <label for="number2">Give another number:</label>
+						   <input class="form-control" type="number" id="number2" maxlength="3"> 
+						</div>						
+						<div class="form-group">
+						   <label for="number3">And another number:</label>
+						   <input class="form-control" type="number" id="number3" maxlength="3"> 
+						</div>						
+						<div class="form-group">
+						   <label for="food">What is your favourite food?</label>
+						   <input class="form-control" type="text" id="food" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="drink">What is your favourite drink?</label>
+						   <input class="form-control" type="text" id="drink" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="colour1">Enter a colour:</label>
+						   <input class="form-control" type="text" id="colour1" maxlength="30"> 
+						</div>						
+						<div class="form-group">
+						   <label for="colour2">Enter another colour:</label>
+						   <input class="form-control" type="text" id="colour2" maxlength="30"> 
+						</div>						
+						<div class="form-group">
+						   <label for="singer">Who is your favourite singer?</label>
+						   <input class="form-control" type="text" id="singer" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="expression1">Your favourite expression?</label>
+						   <input class="form-control" type="text" id="expression1" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="expression2">Another favourite expression?</label>
+						   <input class="form-control" type="text" id="expression2" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="expression3">And another favourite expression?</label>
+						   <input class="form-control" type="text" id="expression3" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="animal">Give a type of animal:</label>
+						   <input class="form-control" type="text" id="animal" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="pet">What is your Pet's Name?</label>
+						   <input class="form-control" type="text" id="pet" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="carMake">Enter a car maker or model:</label>
+						   <input class="form-control" type="text" id="carMake" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="streetName">Name of your grand father?</label>
+						   <input class="form-control" type="text" id="streetName" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="townName">Name of your grand mother?</label>
+						   <input class="form-control" type="text" id="townName" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="hero">Who is your favourite Hero?</label>
+						   <input class="form-control" type="text" id="hero" maxlength="100"> 
+						</div>						
+						<div class="form-group">
+						   <label for="favePlace">What is your favourite place?</label>
+						   <input class="form-control" type="text" id="favePlace" maxlength="100"> 
+						</div>						
+						<button type="submit" class="btn btn-block btn-outline-success">Submit</button>
+					</form>
+                </div>
+            </div>
+
+             <!----------Row for the Output - Notice it has the ID of 'output'---------------------->
+             <div class="row">
+                <div id="output" class="col-sm-10 mx-auto bg-secondary p-5 rounded text-white">
+                    <h2>Your story will show here!</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!---------------------------------Footer------------------------------------>
+	<section id="footer">
+		<div class="container" ><!-- opens footer container  -->			
+			<div class="row py-3 px-3" ><!-- opens row -->
+				<div class="col-sm-4 py-5 px-5"><!-- left column -->
+					<h8>LOCATION</h8>
+					<p>Lethbridge College</p>
+					<p>Lethbridge City, Alberta, Canada</p>
+				</div>
+				<div class="col-sm-4 py-5 px-5"><!-- center column -->
+					<h8>SOCIAL MEDIA</h8>
+					<p>
+						<span class="fab fa-instagram fa-1x" >&nbsp;</span>
+						<span class="fab fa-apple fa-1x" >&nbsp;</span>
+						<span class="fab fa-twitter fa-1x" >&nbsp;</span>
+						<span class="fab fa-facebook fa-1x" >&nbsp;</span>
+					</p>
+				</div>
+				<div class="col-sm-4 py-5 px-5"><!-- right column -->
+					<h8>ABOUT FREELANCER</h8>
+					<p>Harry Capistrano Tiu</p>
+					<p>Student, Multimedia Program</p>
+					<p>myMadlibs</p>
+				</div>
+			</div><!-- closes row -->
+		</div><!-- closes about container  -->			
+	</section>
+	<section id="copyright">
+		<div class="container" ><!-- opens footer container  -->			
+			<div class="row py-1 px-1" ><!-- opens row -->
+				<div class="col-sm-12 py-1 px-1"><!-- left column -->
+					<h10>This page is created purely for Multimedia Scripting exercises only, no copyright infringement intended. myMadlibs Page v1.0</h10>
+				</div>
+			</div><!-- closes row -->
+		</div><!-- closes about container  -->			
+	</section>
+    <!---------------------Your Custom Javascript----------------------->
+    <script src="js/formHandler.js"></script> 
+    
+   
+</body>
+</html>
