@@ -35,7 +35,33 @@ function write(){
 		var townName = document.getElementById('townName').value;
 		var hero = document.getElementById('hero').value;
 		var favePlace = document.getElementById('favePlace').value;
+		
+		var randomNumber = (expression1.length+animal.length+pet.length+carMake.length+streetName.length+townName.length+hero.length+favePlace.length) % 5;
+		var storyScore = "";
+		if(randomNumber == '1'){
+			storyScore = "amusing <i class='far fa-grin-beam'></i><br><iframe src='https://giphy.com/embed/3oEjHAUOqG3lSS0f1C' width='480' height='480' frameBorder='0' class='giphy-embed' allowFullScreen></iframe>";
+		}
+		else if(randomNumber == '2'){
+			storyScore = "comical <i class='far fa-grin-beam'></i><br><iframe src='https://giphy.com/embed/Fn7q3cMgPZmqk' width='480' height='480' frameBorder='0' class='giphy-embed' allowFullScreen></iframe>";
+		}
+		else if(randomNumber == '3'){
+			storyScore = "laughable <i class='far fa-grin-beam'></i><br><iframe src='https://giphy.com/embed/26tPo9rksWnfPo4HS' width='480' height='480' frameBorder='0' class='giphy-embed' allowFullScreen></iframe>";
+		}
+		else if(randomNumber == '4'){			
+			storyScore = "funny! <i class='far fa-grin-beam'></i><br><iframe src='https://giphy.com/embed/ltIFdjNAasOwVvKhvx' width='480' height='480' frameBorder='0' class='giphy-embed' allowFullScreen></iframe>";
+		}
+		else if(randomNumber == '5'){
+			storyScore = "crazy hilarious!!! <i class='far fa-grin-beam'></i><br><iframe src='https://giphy.com/embed/ECtLJKdGj8jfy' width='480' height='480' frameBorder='0' class='giphy-embed' allowFullScreen></iframe>";
+		}
+		else {
+			storyScore = "Boring! <i class='far fa-grin-beam'></i><br><iframe src='https://giphy.com/embed/Nf28lgbd20309PafQM' width='480' height='480' frameBorder='0' class='giphy-embed' allowFullScreen></iframe>";
+		}
 
+		//console.log("Holy! It is working!");
+		document.getElementById('storyRating').innerHTML = "";
+		document.getElementById('storyRating').innerHTML += "<p> Your story is so "+storyScore;
+		document.getElementById('storyRating').innerHTML += "</p>";
+		
 		//console.log("Holy! It is working!");
 		document.getElementById('output').innerHTML = "";
 		
@@ -59,7 +85,13 @@ function write(){
 		document.getElementById('output').innerHTML += "We took a good look it was a giant black " + animal + ". ";
 		document.getElementById('output').innerHTML += "Then the giant black " + animal + " angrily said, \"My name is " + pet + ", I am the king of the woods. I don’t like people setting up a campfire here, go home!\" ";
 		
-		document.getElementById('output').innerHTML += "I grabbed " + girlName1 + " hand and decided to run, " + boyName1 + " grabbed " + girlName2 + " hand and run to the opposite direction. ";
+		if(timeOfTheDay == 'evening'){
+			document.getElementById('output').innerHTML += "I grabbed " + girlName1 + " hand and decided to run, " + boyName1 + " grabbed " + girlName2 + " hand and run to the opposite direction. ";		   
+		}
+		else{
+			document.getElementById('output').innerHTML += "I grabbed " + girlName2 + " hand and decided to run, " + boyName1 + " grabbed " + girlName1 + " hand and run to the same direction. ";		   
+	   }
+		
 		document.getElementById('output').innerHTML += "We ran towards our car a " + carMake + " and saw our friends waiting there. ";
 		document.getElementById('output').innerHTML += boyName1 + " started the car but it was not starting. The we saw " + pet + " coming from behind running towards us. We were so scared but the car wont start running. ";
 		document.getElementById('output').innerHTML += "Then suddenly we heard a loud bang from the back of the car we all shouted " + expression2 + "! then the car started moving. " + pet + " was giving us a push then the car started. ";
