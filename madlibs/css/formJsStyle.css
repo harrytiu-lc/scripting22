@@ -58,12 +58,14 @@ h3{
 	font-size: 30px;
 }
 
-
-
 h10{
 	color: yellow;
 	text-align: center;
 	font-size: 10px;
+}
+
+#storyRating{
+	text-align: center;
 }
 
 /* Smal Devices */
