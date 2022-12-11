@@ -6,6 +6,10 @@
 //    })
 //});
 
+function showCustName(){
+	document.getElementById("output").innerHTML = "<br><h3>Hello "+document.getElementById("custname").value+", Your Order is Here</h3><br>" ;
+}
+
 function selectItem(param){
 	//event.preventDefault();	
 	//alert(param.id + ' || ' + param.name);
