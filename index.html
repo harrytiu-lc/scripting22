@@ -1,284 +1,145 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Full Bio Page - Harry Capistrano Tiu</title>
-	<!----------------------------Viewport Meta Tag------------------------------------>
-	<!-- checks the users device sie and set the zooming capabilities -->
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Creator</title>
+	<!----------------------------Meta Viewport Tag------------------------------------>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- put all font before css -->
+	
+	<!----------------------------Font Awesome---------------------------->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	
-	<!----------------------------Bootstrap CDNs------------------------------------>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
-	<!-- jQuery library -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
-	<!-- Popper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/orderStyle.css">
 
-	<!-- Latest compiled JavaScript -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-	
-	<!--------YOUR CSS - MUST go after the CDNs so you overwrite their styles---------------->
-	<link href="css/bioStyles.css" rel="stylesheet" type="text/css">		
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
+    
 </head>
 <body>
-	<script>
-		function myFunction(imgs,expandedImgParam,imgtextParam) {
-		  var expandImg = document.getElementById(expandedImgParam);
-		  var imgText = document.getElementById(imgtextParam);
-		  expandImg.src = imgs.src;
-		  imgText.innerHTML = imgs.alt;
-		  expandImg.parentElement.style.display = "block";
-		}
-	</script>	
-	<!---------------------------------Masthead------------------------------------>
-	<header id="masthead">
-		<div class="container" >
-			<div class="row p-5" >
-				<div class="col-sm-12 text-center text-white">
-					<h1>Harry Capistrano Tiu</h1>
-					<h5>"It is better to try then failed than not to try at all!"</h5>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!---------------------------------Portfolio Starts ------------------------------------>
-	<section id="portfolio">
+
+    <!---------------------Masthead----------------------->
+    <header id="homeMasthead">
+        <div class="container">
+            <div class="row align-items-center customHeight">
+                <div class="col-sm-6 bg-dark mx-auto p-5 rounded">
+                    <h2>Hungry? It's Time to Eat</h2>
+                    <h1>Welcome To Order Creator</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+    <!---------------------Menu----------------------->
+	<section id="Menu">
 		<div class="container" >
 			<!-- first row -->
 			<div class="row p-3" >
 				<div class="col-sm-12 text-center">
-					<h2><span class="fas fa-address-card fa-1x" >&nbsp;</span>Portfolio</h2>
+					<br><h3>Choose Your Orders Here</h3>
 				</div>
 			</div><!-- closes the first row -->
-			<!-- second row -->
+			<!-- menu row -->
+			<form action="javascript:write();">
 			<div class="row py-3 px-3" >
 				<div class="col-sm-4"><!-- left column -->
-					<img class="img-fluid rounded" src="images/profilePic.jpg" alt="Profile Summary">
-					<h6>Multimedia Student</h6>
-					
-					<section class="stickyTopNav">
-						<hr>
-						<h3>Projects</h3>
-						<nav>
-							 <ul>
-							  <li><a href="./GruHarry" target="_blank">Favourite Fictional Character</a></li>
-							  <li><a href="./HomeTown" target="_blank">Hometown</a> </li>
-							  <li><a href="./madlibs" target="_blank">MadLibs</a></li>
-							  <li><a href="./AvatarCreator" target="_blank">Avatar Creator</a></li>
-							</ul> 
-						</nav>	
-					</section>
+					<div><h5>Select Your Plate</h5></div>
+					<div>
+						<img onClick="javascript:setPlate(this,'placedImages/PlateWhite.png')" id="PlateWhiteTh" name="Plate" src="images/PlateWhiteTh.png" alt="Plate White" title="Plate White">
+						<img onClick="javascript:setPlate(this,'placedImages/PlateYellow.png')" id="PlateYellowTh" name="Plate" src="images/PlateYellowTh.png" alt="Plate Yellow" title="Plate Yellow">
+						<img onClick="javascript:setPlate(this,'placedImages/PlateBlue.png')" id="PlateBlueTh" name="Plate" src="images/PlateBlueTh.png" alt="Plate Blue" title="Plate Blue">
+					</div>
+				
+				</div>
+				<div class="col-sm-4"><!-- center column -->
+					<div><h5>Main Course</h5></div>
+					<div>
+						<img onClick="javascript:setMainCourse(this,'placedImages/MainFriedChix.png')" id="MainFriedChixTh" name="MainCourse" src="images/MainFriedChixTh.png" alt="Fried Chicken" title="Fried Chicken">
+						<img onClick="javascript:setMainCourse(this,'placedImages/MainGrilledWholeChicken.png')" id="MainGrilledWholeChickenTh" name="MainCourse" src="images/MainGrilledWholeChickenTh.png" alt="Grilled Whole Chicken" title="Grilled Whole Chicken">
+						<img onClick="javascript:setMainCourse(this,'placedImages/MainGrilledFish.png')" id="MainGrilledFishTh" name="MainCourse" src="images/MainGrilledFishTh.png" alt="Grilled Fish" title="Grilled Fish">
+						<img onClick="javascript:setMainCourse(this,'placedImages/MainGrilledSalmon.png')" id="MainGrilledSalmonTh" name="MainCourse" src="images/MainGrilledSalmonTh.png" alt="Grilled Salmon" title="Grilled Salmon">
+						<img onClick="javascript:setMainCourse(this,'placedImages/MainLemonChicken.png')" id="MainLemonChickenTh" name="MainCourse" src="images/MainLemonChickenTh.png" alt="Lemon Chicken" title="Lemon Chicken">
+						<img onClick="javascript:setMainCourse(this,'placedImages/MainSeafoodPasta.png')" id="MainSeafoodPastaTh" name="MainCourse" src="images/MainSeafoodPastaTh.png" alt="Seafood Pasta" title="Seafood Pasta">
+						<img onClick="javascript:setMainCourse(this,'placedImages/MainShrimp.png')" id="MainShrimpTh" name="MainCourse" src="images/MainShrimpTh.png" alt="Shrimp" title="Shrimp">
+						<img onClick="javascript:setMainCourse(this,'placedImages/MainSteak.png')" id="MainSteakTh" name="MainCourse" src="images/MainSteakTh.png" alt="Steak" title="Steak">
+					</div>
 
 				</div>
-				<!-- Accordion Starts -->
-				<div class="col-sm-8">
-					<div class="panel-group" id="accordion">
-						<div class="panel panel-default rounded">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-								<span class="fas fa-street-view fa-1x" >&nbsp;</span>Background</a>
-								</h4>
-							</div>
-							<div id="collapse1" class="panel-collapse collapse in">
-								<div class="panel-body">
-									<p class="card-body">A filipino citizen, born and raised in the Philippines. Harry has spent his childhood living a simple life in a humble community in San Juan City, Metro Manila, Philippines. Only son in a family of 6 - parents and 3 sisters. </p>
-								</div>
-
-								<div style="text-align:center">
-									<h4>Hometown Gallery</h4>
-									<p>Click on the images below:</p>
-								</div>
-								<!-- The four columns -->
-								<div class="row">
-									<div class="tab-container1">
-										<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-										<img id="expandedImg1" style="width:100%" alt="" class="tab-img-zoom">
-										<div id="imgtext1" class="overlay"></div>
-									</div>
-									<div class="column">
-										<img src="images/sanjuancitygovtctr.jpg" alt="San Juan City Government Center. Picture Courtesy of www.sanjuancity.gov.ph." style="width:100%" onclick="myFunction(this,'expandedImg1','imgtext1');">
-									</div>
-									<div class="column">
-										<img src="images/sanjuancityshoppingctr.jpg" alt="Greenhills Shopping Center, the premier commercial center in San Juan City. Picture Courtesy of www.sanjuancity.gov.ph." style="width:100%;" onclick="myFunction(this,'expandedImg1','imgtext1');">
-									</div>
-									<div class="column">
-										<img src="images/sanjuancitymuseum.jpg" alt="San Juan City Museum. Picture Courtesy of www.sanjuancity.gov.ph." style="width:100%" onclick="myFunction(this,'expandedImg1','imgtext1');">
-									</div>
-									<div class="column">
-										<img src="images/catholicChurch.jpg" alt="Santuario del Santo Cristo Parish in San Juan City built 1602 to 1604, the early years of almost four centuries of Spanish Colonization of the Philippines." style="width:100%" onclick="myFunction(this,'expandedImg1','imgtext1');">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default rounded">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-								<span class="fas fa-book-reader fa-1x" >&nbsp;</span>Education</a>
-								</h4>
-							</div>
-							<div id="collapse2" class="panel-collapse collapse in">
-								<div class="panel-body">
-									<p class="card-body">Harry took his primary and secondary education in Philippine Chen Kuang High School in San Juan City. After graduating from secondary school, he took Bachelor of Science in Computer Engineering in Polytechnic University of the Philippines in Manila. Now he is taking Multimedia Program in Lethbridge College in Lethbridge, Alberta, Canada.</p>
-								</div>
-
-								<div style="text-align:center">
-									<h4>School Gallery</h4>
-									<p>Click on the images below:</p>
-								</div>
-								<!-- The four columns -->
-								<div class="row">
-									<div class="tab-container2">
-										<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-										<img id="expandedImg2" style="width:100%" alt="" class="tab-img-zoom">
-										<div id="imgtext2" class="overlay"></div>
-									</div>
-									<div class="column">
-										<img src="images/chenkuang.jpg" alt="Philippine Chen Kuang High School in San Juan City. One of the only two Chinese schools in San Juan City, the other is Xavier School. Picture Courtesy of chenkuang.net." style="width:100%" onclick="myFunction(this,'expandedImg2','imgtext2');">
-									</div>
-									<div class="column">
-										<img src="images/pup.jpg" alt="Polytechnic University of the Philippines established 1904 in Manila, Philippines. The biggest state college in the country in terms of student population. Picture Courtesy of www.pup.edu.ph." style="width:100%;" onclick="myFunction(this,'expandedImg2','imgtext2');">
-									</div>
-									<div class="column">
-										<img src="images/lethbridgecollege.jpg" alt="Lethbridge College Campus in Lethbridge, Alberta, Canada. Picture Courtesy of www.mylethbridgenow.com." style="width:100%" onclick="myFunction(this,'expandedImg2','imgtext2');">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default rounded">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-								<span class="fa fa-child fa-1x" >&nbsp;</span>Family Life</a>
-								</h4>
-							</div>
-							<div id="collapse3" class="panel-collapse collapse in">
-								<div class="panel-body">
-									<p class="card-body">Harry is married to Zaida, they got married while in Manila. When the couple moved to Singapore, they were blessed with one kid Hans Zuniel. Together this family loves to travel and celebrate holidays.</p>
-								</div>
-
-								<div style="text-align:center">
-									<h4>Family Gallery</h4>
-									<p>Click on the images below:</p>
-								</div>
-								<!-- The four columns -->
-								<div class="row">
-									<div class="tab-container3">
-										<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-										<img id="expandedImg3" style="width:100%" alt="" class="tab-img-zoom">
-										<div id="imgtext3" class="overlay"></div>
-									</div>
-									<div class="column">
-										<img src="images/harryZaida.jpg" alt="Harry and Zaida before Hans was born." style="width:100%" onclick="myFunction(this,'expandedImg3','imgtext3');">
-									</div>
-									<div class="column">
-										<img src="images/hans0.JPG" alt="Hans when he was few months old." style="width:100%" onclick="myFunction(this,'expandedImg3','imgtext3');">
-									</div>
-									<div class="column">
-										<img src="images/harryZaidaHansBday.jpg" alt="Harry and Zaida celebrating Hans birthday. Cake is mom's favourite cartoon character." style="width:100%;" onclick="myFunction(this,'expandedImg3','imgtext3');">
-									</div>
-									<div class="column">
-										<img src="images/familyDinner.jpg" alt="Harry, Zaida and Hans celebrating mom's birthday in this dinner at Shangrila Singapore." style="width:100%;" onclick="myFunction(this,'expandedImg3','imgtext3');">
-									</div>
-									<div class="column">
-										<img src="images/hans.jpg" alt="Hans went for staycation in Universal Studios Singapore on a very hot summer season." style="width:100%" onclick="myFunction(this,'expandedImg3','imgtext3');">
-									</div>
-									<div class="column">
-										<img src="images/hans1.jpg" alt="Hans went again for staycation this time during the pandemic in Mercure Hotel Singapore." style="width:100%" onclick="myFunction(this,'expandedImg3','imgtext3');">
-									</div>
-									<div class="column">
-										<img src="images/hansMBS.jpg" alt="Hans went for staycation in Marina Bay Sands on his 9th birthday." style="width:100%" onclick="myFunction(this,'expandedImg3','imgtext3');">
-									</div>
-								</div>
-							</div>						
-						</div>
-						<div class="panel panel-default rounded">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-								<span class="fa fa-paper-plane fa-1x" >&nbsp;</span>Travels</a>
-								</h4>
-							</div>
-							<div id="collapse4" class="panel-collapse collapse in">
-								<div class="panel-body">
-									<p class="card-body">Harry also likes to travel and has travelled to several countries like Indonesia, Malaysia, China and Russia. He went together with his friends who toured him around the city. Here are some of the pictures from his travels.</p>
-								</div>
-
-								<div style="text-align:center">
-									<h4>Travel Gallery</h4>
-									<p>Click on the images below:</p>
-								</div>
-								<!-- The four columns -->
-								<div class="row">
-									<div class="tab-container4">
-										<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-										<img id="expandedImg4" style="width:100%" alt="" class="tab-img-zoom">
-										<div id="imgtext4" class="overlay"></div>
-									</div>
-									<div class="column">
-										<img src="images/harryNanjing2.jpg" alt="Harry in Nanjing sometime in February 2017. Aside from the Great Wall of China in the north, the city of Nanjing has its own Great Wall that served as fortress to defend the city from intruders." style="width:100%" onclick="myFunction(this,'expandedImg4','imgtext4');">
-									</div>
-									<div class="column">
-										<img src="images/harryShanghai2.JPG" alt="Harry in Shanghai sometime in February 2017. He went shopping in Shangai but found out the prices are also enpensive as other major cities." style="width:100%" onclick="myFunction(this,'expandedImg4','imgtext4');">
-									</div>
-									<div class="column">
-										<img src="images/harryRussia.jpg" alt="Harry in Moscow, Russia sometime in January 2018. His Russian friends took him to see the Red Square Museum." style="width:100%;" onclick="myFunction(this,'expandedImg4','imgtext4');">
-									</div>
-									<div class="column">
-										<img src="images/harryJapaneseGarden.jpg" alt="While studying Multimedia Program in Lethbridge he went to visit some of the attractions in Lethbridge, like this one in the very beautiful Japanese Gardern near Henderson Lake." style="width:100%;" onclick="myFunction(this,'expandedImg4','imgtext4');">
-									</div>
-								</div>
-							</div>						
-						</div>
-						<div class="panel panel-default rounded">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-								<span class="fas fa-chess fa-1x" >&nbsp;</span>Hobbies</a>
-								</h4>
-							</div>
-							<div id="collapse5" class="panel-collapse collapse in">
-								<div class="panel-body">
-									<p class="card-body">Harry also likes to play indoor and outdoor sports with his friends.</p>
-								</div>
-
-								<div style="text-align:center">
-									<h4>Hobbies Gallery</h4>
-									<p>Click on the images below:</p>
-								</div>
-								<!-- The four columns -->
-								<div class="row">
-									<div class="tab-container5">
-										<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-										<img id="expandedImg5" style="width:100%" alt="" class="tab-img-zoom">
-										<div id="imgtext5" class="overlay"></div>
-									</div>
-									<div class="column">
-										<img src="images/harryBadminton.jpg" alt="Badminton is one of Harry's favorite sport and played a lot of times with friends. They will book a court during weekend and spend hours playing." style="width:100%" onclick="myFunction(this,'expandedImg5','imgtext5');">
-									</div>
-									<div class="column">
-										<img src="images/harryBoating.jpg" alt="Harry went for boating with his friends somewhere near the border between Jurong, Singapore and Johor Bahru, Malaysia." style="width:100%;" onclick="myFunction(this,'expandedImg5','imgtext5');">
-									</div>
-									<div class="column">
-										<img src="images/harryBiking.jpg" alt="Harry does alot of biking especially with his son Hans. In this picture, he went for hill trail biking somewhere in Ang Mo Kio, Singapore." style="width:100%;" onclick="myFunction(this,'expandedImg5','imgtext5');">
-									</div>
-								</div>
-							</div>	
-						</div>		
+				<div class="col-sm-4"><!-- center column -->
+					<div><h5>Soup on the Side</h5></div>
+					<div>
+						<img onClick="javascript:setSoup(this,'placedImages/SoupBeefPho.png')" id="SoupBeefPhoTh" name="SideSoup" src="images/SoupBeefPhoTh.png" alt="Beef Pho Soup" title="Beef Pho Soup">
+						<img onClick="javascript:setSoup(this,'placedImages/SoupDumpling.png')" id="SoupDumplingTh" name="SideSoup" src="images/SoupDumplingTh.png" alt="Dumpling Soup" title="Dumpling Soup">
+						<img onClick="javascript:setSoup(this,'placedImages/SoupNoodle.png')" id="SoupNoodleTh" name="SideSoup" src="images/SoupNoodleTh.png" alt="Noodle Soup" title="Noodle Soup">
+						<img onClick="javascript:setSoup(this,'placedImages/SoupPumpkin.png')" id="SoupPumpkinTh" name="SideSoup" src="images/SoupPumpkinTh.png" alt="Pumpkin Soup" title="Pumpkin Soup">
+						<img onClick="javascript:setSoup(this,'placedImages/SoupMushroom.png')" id="SoupMushroomTh" name="SideSoup" src="images/SoupMushroomTh.png" alt="Mushroom Soup" title="Mushroom Soup">								
 					</div>
-				<!-- Accordion Ends -->
-				</div><!-- closes the second row -->
+				</div>
+			</div>
+			<div class="row py-3 px-3" >
+				<div class="col-sm-4"><!-- left column -->
+					<div><h5>Side Course A</h5></div>
+					<div>
+						<img onClick="javascript:setSideCourseTop(this,'placedImages/SideTopBreadPoachEgg.png')" id="SideBreadPoachEggThA" name="SideCourseA" src="images/SideBreadPoachEggTh.png" alt="Bread Poach Egg" title="Bread Poach Egg">
+						<img onClick="javascript:setSideCourseTop(this,'placedImages/SideTopCaliMaki.png')" id="SideCaliMakiThA" name="SideCourseA" src="images/SideCaliMakiTh.png" alt="Cali Maki" title="Cali Maki">
+						<img onClick="javascript:setSideCourseTop(this,'placedImages/SideTopCheesePasta.png')" id="SideCheesePastaThA" name="SideCourseA" src="images/SideCheesePastaTh.png" alt="Cheese Pasta" title="Cheese Pasta">
+						<img onClick="javascript:setSideCourseTop(this,'placedImages/SideTopEggFriedRice.png')" id="SideEggFriedRiceThA" name="SideCourseA" src="images/SideEggFriedRiceTh.png" alt="Egg Fried Rice" title="Egg Fried Rice">
+						<img onClick="javascript:setSideCourseTop(this,'placedImages/SideTopFriedRice.png')" id="SideFriedRiceThA" name="SideCourseA" src="images/SideFriedRiceTh.png" alt="Special Fried Rice" title="Special Fried Rice">
+						<img onClick="javascript:setSideCourseTop(this,'placedImages/SideTopGreenPeasRice.png')" id="SideGreenPeasRiceThA" name="SideCourseA" src="images/SideGreenPeasRiceTh.png" alt="Green Peas Rice" title="">
+					</div>
+				</div>
+				<div class="col-sm-4"><!-- center column -->
+					<div><h5>Side Course B</h5></div>
+					<div>
+						<img onClick="javascript:setSideCourseBottom(this,'placedImages/SideBottomBreadPoachEgg.png')" id="SideBreadPoachEggThB" name="SideCourseB" src="images/SideBreadPoachEggTh.png" alt="Bread Poach Egg" title="Bread Poach Egg">
+						<img onClick="javascript:setSideCourseBottom(this,'placedImages/SideBottomCaliMaki.png')" id="SideCaliMakiThB" name="SideCourseB" src="images/SideCaliMakiTh.png" alt="Cali Maki" title="Cali Maki">
+						<img onClick="javascript:setSideCourseBottom(this,'placedImages/SideBottomCheesePasta.png')" id="SideCheesePastaThB" name="SideCourseB" src="images/SideCheesePastaTh.png" alt="Cheese Pasta" title="Cheese Pasta">
+						<img onClick="javascript:setSideCourseBottom(this,'placedImages/SideBottomEggFriedRice.png')" id="SideEggFriedRiceThB" name="SideCourseB" src="images/SideEggFriedRiceTh.png" alt="Egg Fried Rice" title="Egg Fried Rice">
+						<img onClick="javascript:setSideCourseBottom(this,'placedImages/SideBottomFriedRice.png')" id="SideFriedRiceThB" name="SideCourseB" src="images/SideFriedRiceTh.png" alt="Special Fried Rice" title="Special Fried Rice">
+						<img onClick="javascript:setSideCourseBottom(this,'placedImages/SideBottomGreenPeasRice.png')" id="SideGreenPeasRiceThB" name="SideCourseB" src="images/SideGreenPeasRiceTh.png" alt="Green Peas Rice" title="">
+					</div>
+				</div>
+				<div class="col-sm-4"><!-- center column -->
+					<div><h5>Drinks</h5></div>
+					<div>
+						<img onClick="javascript:setDrink(this,'placedImages/DrinkBlackCoffee.png')" id="DrinkBlackCoffeeTh" name="Drinks" src="images/DrinkBlackCoffeeTh.png" alt="Black Coffee" title="Black Coffee">
+						<img onClick="javascript:setDrink(this,'placedImages/DrinkBrownCoffee.png')" id="DrinkBrownCoffeeTh" name="Drinks" src="images/DrinkBrownCoffeeTh.png" alt="Brown Coffee" title="Brown Coffee">
+						<img onClick="javascript:setDrink(this,'placedImages/DrinkCocaCola.png')" id="DrinkCocaColaTh" name="Drinks" src="images/DrinkCocaColaTh.png" alt="Coca Cola" title="Coca Cola">
+						<img onClick="javascript:setDrink(this,'placedImages/DrinkLatte.png')" id="DrinkLatteTh" name="Drinks" src="images/DrinkLatteTh.png" alt="Latte" title="Latte">
+						<img onClick="javascript:setDrink(this,'placedImages/DrinkLemonWater.png')" id="DrinkLemonWaterTh" name="Drinks" src="images/DrinkLemonWaterTh.png" alt="Lemon Water" title="Lemon Water">
+					</div>
+				</div>
+			</div>			
+			<!-- closes the menu row -->
+			</form>
+			<div id="Order" class="col-sm-8 mx-auto p-3 rounded">
+				<br><h3>Your Orders Will Be Served Here</h3><br>
+ 				<div id="orderBuilder">
+					<div id="tableClothCutlery">
+						<img class="img-fluid" src="images/DiningSetWithCutlery.png" alt="tableClothCutlerySelected">
+					</div>
+					<div id="plate"></div>
+					<div id="mainCourse"></div>
+					<div id="sideCourseTop"></div>
+					<div id="sideCourseBottom"></div>
+					<div id="soup"></div>
+					<div id="drink"></div>
+				</div>								
 			</div>
 		</div>
-	</section>	
-	
-	<!---------------------------------Portfolio Ends ------------------------------------>
+	</section>
+
 	<!---------------------------------Footer------------------------------------>
 	<section id="footer">
 		<div class="container" ><!-- opens footer container  -->			
@@ -290,12 +151,21 @@
 				</div>
 				<div class="col-sm-4 py-5 px-5"><!-- center column -->
 					<h8>SOCIAL MEDIA</h8>
-					<p><span class="fab fa-instagram fa-1x" ></span><span class="fab fa-apple fa-1x" ></span><span class="fab fa-twitter fa-1x" ></span><span class="fab fa-facebook fa-1x" ></span></p>
+					<p>
+						<span class="fab fa-instagram fa-1x" >&nbsp;</span>
+						<span class="fab fa-apple fa-1x" >&nbsp;</span>
+						<span class="fab fa-twitter fa-1x" >&nbsp;</span>
+						<span class="fab fa-facebook fa-1x" >&nbsp;</span>
+					</p>
+					<h8>REFERENCES</h8>
+					<p>Images courtesy of <a href="https://www.pexels.com/" target="_blank">pexels.com</a></p>
 				</div>
 				<div class="col-sm-4 py-5 px-5"><!-- right column -->
-					<h8>ABOUT FREELANCER</h8>
+					<h8>ABOUT THE AUTHOR</h8>
 					<p>Harry Capistrano Tiu</p>
 					<p>Student, Multimedia Program</p>
+					<p>Avatar Creator</p>
+					<p><a href="https://harrytiu-lc.github.io/scripting22/" target="_self">Author Bio Page</a></p>
 				</div>
 			</div><!-- closes row -->
 		</div><!-- closes about container  -->			
@@ -304,10 +174,14 @@
 		<div class="container" ><!-- opens footer container  -->			
 			<div class="row py-1 px-1" ><!-- opens row -->
 				<div class="col-sm-12 py-1 px-1"><!-- left column -->
-					<h10>This page is created purely for HTML with CSS/Bootstrap practice writing purposes only, no copyright infringement intended. Bio Page v1.05</h10>
+					<h10>This page is created purely for Multimedia Scripting exercises only, no copyright infringement intended. Avatar Creator Page v1.0</h10>
 				</div>
 			</div><!-- closes row -->
 		</div><!-- closes about container  -->			
-	</section>	
+	</section>
+    <!---------------------Your Custom Javascript----------------------->
+    <script src="js/orderHandler.js"></script> 
+    
+   
 </body>
 </html>
