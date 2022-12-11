@@ -47,7 +47,8 @@
 			<!-- first row -->
 			<div class="row p-3" >
 				<div class="col-sm-12 text-center">
-					<br><h3>Choose Your Orders Here</h3>
+					<br><h3>Hi!&nbsp;&nbsp;<input type="text" id="custname" name="custname" placeholder="Enter Your Name Here.." onBlur="javascript:showCustName()"></h3>
+					<br><h3>Select Your Order Here</h3>
 				</div>
 			</div><!-- closes the first row -->
 			<!-- menu row -->
@@ -123,8 +124,13 @@
 			</div>			
 			<!-- closes the menu row -->
 			</form>
+			<div id="spacerLeft" class="col-sm-2 mx-auto p-3 rounded">
+				<br><h3>&nbsp;</h3><br>
+			</div>
 			<div id="Order" class="col-sm-8 mx-auto p-3 rounded">
-				<br><h3>Your Orders Will Be Served Here</h3><br>
+                <div id="output">
+                    <br><h3>Your Orders Will Be Served Here</h3><br>
+                </div>				
  				<div id="orderBuilder">
 					<div id="tableClothCutlery">
 						<img class="img-fluid" src="images/DiningSetWithCutlery.png" alt="tableClothCutlerySelected">
@@ -136,6 +142,9 @@
 					<div id="soup"></div>
 					<div id="drink"></div>
 				</div>								
+			</div>
+			<div id="spacerRight" class="col-sm-2 mx-auto p-3 rounded">
+				<br><h3>&nbsp;</h3><br>
 			</div>
 		</div>
 	</section>
