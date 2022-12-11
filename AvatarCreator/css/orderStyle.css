@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* fonts go first*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Croissant+One&family=Satisfy&display=swap');
+
+/* outside div that is wrapped around all customization*/
+#orderBuilder{
+    position: relative;
+    height: 650px;
+}
+
+/* All internal customization divs need to be positioned absolute to stack them up*/
+#tableClothCutlery, #plate, #mainCourse, #sideCourseTop, #sideCourseBottom, #soup, #drink{
+    position: absolute;
+}
+
+header{
+    background-image: url("../images/pexelsDiningTable.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.customHeight{
+    height:60vh;
+}
+
+body {
+	background-image: url("../images/pexelsBgTableWoodLg4.jpg");
+	background-position: center;
+	background-size:  contain;
+}
+
+#Menu {
+/*
+	background-color: beige;
+	background-image: url("../images/pexelsBgTableWoodLg.jpg");	
+	background-size: contain;
+*/
+}
+#Order{
+/*
+	background-color: beige;
+	background-image: url("../images/pexelsBgTableWoodLg.jpg");	
+	background-size: contain;	
+*/
+}
+#footer{
+	/*	background-color: #06B88F;*/
+	background-image: url("../images/Abstract-blue_0.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#copyright{
+	background-color: black;
+	text-align: center;
+	color: #FFFFFF; 
+}
+
+
+h1{
+	font-family: 'Croissant One', cursive;
+	color: orange;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 40px;
+}
+
+h2{
+	font-family: 'Croissant One', cursive;
+	color: yellow;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 40px;
+}
+
+h3{
+	font-family: 'Satisfy', cursive;
+	color: maroon;
+	text-align: center;
+	font-weight: normal;
+	font-size: 35px;
+}
+
+h5{
+	font-family: 'Arvo', serif;
+	color: firebrick;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bolder;
+	font-size: 22px;
+}
+
+h7{
+	font-family: 'Comic Neue', sans-serif;
+	color: yellow;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+
+
+h10{
+	color: yellow;
+	text-align: center;
+	font-size: 10px;
+}
+
+img{
+	border: solid 1px gray;
+}
+.inactiveImg{
+	border: solid 1px gray;
+}
+.activeImg{
+	border: solid 2px red;
+}
+
+/* Smal Devices */
+@media only screen and (min-width: 576px) {
+	.display-1{
+		font-size: 30pt;
+		color: white;
+	}
+}/*close small media query*/
+
+/* Medium Devices*/
+@media only screen and (min-width: 856px) {
+	#homeMasthead{
+		background-image: url("../images/pexelsDiningTable3.jpg");
+		background-position: bottom;
+		background-size: cover;
+	}
+	.container{
+		max-width: 95%;
+	}
+	.display-1{
+		margin-top: 5px;
+		color: yellow;
+		font-family: 'Comic Neue', cursive;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	.display-2{
+		margin-top: 5px;
+		color: yellow;
+		font-family: 'Comic Neue', cursive;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	#collapsibleNavbar{
+		width: 100%;
+		align: right;
+	}
+} /*close medium media query*/
+
